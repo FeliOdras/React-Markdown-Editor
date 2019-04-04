@@ -9,7 +9,6 @@ class MarkdownEditor extends Component {
     }
 
     handleChange = (event) => {
-        console.log('Changing')
         this.setState({
             value: event.target.value
         })

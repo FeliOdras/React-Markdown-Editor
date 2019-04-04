@@ -14,6 +14,10 @@ class MarkdownEditor extends Component {
         })
     }
 
+    getRawMarkup() {
+
+    }
+
     render() {
         return (
             <div>

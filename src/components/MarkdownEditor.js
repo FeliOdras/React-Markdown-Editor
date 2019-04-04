@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Remarkable from 'remarkable'
 
 class MarkdownEditor extends Component {
     constructor(props) {
@@ -15,7 +16,8 @@ class MarkdownEditor extends Component {
     }
 
     getRawMarkup() {
-
+        const md = new Remarkable;
+        return { __html: md.render(this.state.value) };
     }
 
     render() {
@@ -29,7 +31,8 @@ class MarkdownEditor extends Component {
                     defaultValue={this.state.value}
                 />
                 <h3>Output</h3>
-                <div className="markdown-output"></div>
+                <div className="markdown-output" dangerouslySetInnerHTML={this.getRawMarkup()}>
+                </div>
             </div>
         )
     }

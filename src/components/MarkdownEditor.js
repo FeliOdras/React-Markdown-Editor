@@ -8,12 +8,23 @@ class MarkdownEditor extends Component {
         }
     }
 
+    handleChange = (event) => {
+        console.log('Changing')
+        this.setState({
+            value: event.target.value
+        })
+    }
+
     render() {
         return (
             <div>
                 <h3>Input</h3>
                 <p>Enter some markdown</p>
-                <textarea className="markdown-input" cols="40" rows="8" value={this.state.value}></textarea>
+                <textarea cols="40" rows="8"
+                    className="markdown-input"
+                    onChange={this.handleChange}
+                    defaultValue={this.state.value}
+                />
                 <h3>Output</h3>
                 <div className="markdown-output"></div>
             </div>

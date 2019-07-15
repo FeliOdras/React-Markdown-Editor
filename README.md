@@ -3,7 +3,7 @@
 Web Application to convert Markdown to HTML.
 
 ## Preview
-[Markdown Editor](https://raw.githubusercontent.com/FeliOdras/React-Markdown-Editor/master/markdown-editor.png)
+[MarkdownEditor](https://raw.githubusercontent.com/FeliOdras/React-Markdown-Editor/master/markdown-editor.png)
 
 ---
 

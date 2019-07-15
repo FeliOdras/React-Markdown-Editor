@@ -1,12 +1,14 @@
-import React from 'react';
-import logo from '../logo.svg';
+import React from "react";
+import logo from "../logo.svg";
 
 const Logo = () => {
-    return (
-        <div>
-            <img src={logo} className="App-logo" alt="logo" />
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>
+        <img src={logo} className="App-logo" alt="logo" /> Markdown Editor
+      </h1>
+    </div>
+  );
+};
 
-export default Logo
+export default Logo;
